@@ -12,7 +12,7 @@
     <header>
       <h1>The Sun Now</h2>
       <button id="load-temp" class="load-temp">Show Another Time</button>
-      <button type="submit" id="info" class="load-temp">What Am I Looking At?</button>
+      <button onclick="openPopup()" type="submit" id="info" class="load-temp">What Am I Looking At?</button>
     </header>
 
     <div class="container">
@@ -20,11 +20,19 @@
         <p class="time">Time: 16:33:00</p>
         <p class="temp">Temperature in Kelvin: 174385</p> 
     </div>
+
     <div class="container">
-        <p text-color>The temperature of the sun changes drastically, even in a span of one hour! In this particular hour,
+      <div class="popup" id="popup">
+        <h2 text-color>The temperature of the sun changes drastically, even in a span of one hour! In this particular hour,
           the temperature of the sun went from a high of 205,000 K to a low of 70,000 K. The temperature of the sun corresponds
           to its temperature. The temperature scale is as follows from lowest to highest: Green, Blue, Pink, Yellow and Red. 
-        </p>
+        </h2>
+        <button onclick="closePopup()" type="button">OK</button>
+      </div>
+    </div>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="60" value="1" class="slider" id="myRange">
+      <h2>Value: <span id="value"></span></h2>
     </div>
     
     <script src="js/script.js"></script>
