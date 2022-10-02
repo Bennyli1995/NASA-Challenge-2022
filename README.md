@@ -1,2 +1,2 @@
-# Project 1: Random Quote Generator
- This is my first TechDegree project, where I built a random quote generator that generates a random quote every 10 seconds.
+# NASA CHALLENGE 2022
+creating a visualizing website that helps user to see the change in color of the sun 
